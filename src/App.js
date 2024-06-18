@@ -5,6 +5,7 @@ import ClassComponent from './ClassComponent'
 import FunctionalComponent from './FunctionalComponent'
 import StateExampleInClassComponent from './StateExampleInClassComponent'
 import PropsExampleInClassComponent from './PropsExampleInClassComponent'
+import Form from './Form'
 
 const App = () => {
   const styling={
@@ -21,17 +22,18 @@ const App = () => {
   }
   return (
     <div className='container'>
-      <h1 style={styling}>My First React App</h1>
+      {/*<h1 style={styling}>My First React App</h1>
       <h2 style={{color:"black",textAlign:"center "}}>The No of times button clicked {count}</h2>
       <center>
       <button style={{color:"black",backgroundColor:"lightgrey",padding:"10px",margin:"50px"}} onClick={() => setCount(count+1)}>Click here</button><br></br>
       <input type='text' placeholder='Enter username' value={username}  onChange={handler}/> <br/> 
       <h3 style={{color:"black"}}> entered username is : {username}</h3>
       </center>
-      {/*<ClassComponent></ClassComponent>
+      <ClassComponent></ClassComponent>
       <FunctionalComponent></FunctionalComponent>
       <StateExampleInClassComponent></StateExampleInClassComponent>
        <PropsExampleInClassComponent/>  */}
+       <Form></Form>
     </div>
   )
 }
