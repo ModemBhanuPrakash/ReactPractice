@@ -1,4 +1,4 @@
-import React,{ useState } from 'react'
+import React,{ useState, useEffect } from 'react'
 
 // import './App.css';
 import ClassComponent from './ClassComponent'
@@ -13,7 +13,8 @@ const App = () => {
     padding : "50px",
     textAlign : "center"
   }
-  const [count,setCount] = useState(0);
+  const [count,setCount] = useState(0); //useState is used to intialize,store and modify the data or variable etc,here count is variable in which our data is stored and setCount is a method to modify our count variable
+  useEffect(()=>console.log(count),[count]) //useEffect is a method which will be excuted once if there are no dependencies, we mention dependencies in [],in this example count is the dependency so this function will be executed whenever count variable changes.
   return (
     <div className='container'>
       <h1 style={styling}>My First React App</h1>
