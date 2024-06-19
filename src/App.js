@@ -7,6 +7,7 @@ import StateExampleInClassComponent from './StateExampleInClassComponent'
 import PropsExampleInClassComponent from './PropsExampleInClassComponent'
 import Form from './Form'
 import Map from './Map'
+import SignupForm from './SignupForm'
 
 const App = () => {
   const styling={
@@ -34,8 +35,9 @@ const App = () => {
       <FunctionalComponent></FunctionalComponent>
       <StateExampleInClassComponent></StateExampleInClassComponent>
        <PropsExampleInClassComponent/>  
-       <Form></Form>*/}
-       <Map/>
+       <Form></Form>
+       <Map/>*/}
+       <SignupForm></SignupForm>
     </div>
   )
 }
