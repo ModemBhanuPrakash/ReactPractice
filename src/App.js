@@ -9,6 +9,7 @@ import Form from './Form'
 import Map from './Map'
 import SignupForm from './SignupForm'
 import Fetch from './Fetch'
+import Axios from './Axios'
 
 const App = () => {
   const styling={
@@ -38,8 +39,9 @@ const App = () => {
        <PropsExampleInClassComponent/>  
        <Form></Form>
        <Map/>
-       <SignupForm></SignupForm>*/}
-       <Fetch/>
+       <SignupForm></SignupForm>
+       <Fetch/>*/}
+       <Axios/>
     </div>
   )
 }
