@@ -8,6 +8,7 @@ import PropsExampleInClassComponent from './PropsExampleInClassComponent'
 import Form from './Form'
 import Map from './Map'
 import SignupForm from './SignupForm'
+import Fetch from './Fetch'
 
 const App = () => {
   const styling={
@@ -36,8 +37,9 @@ const App = () => {
       <StateExampleInClassComponent></StateExampleInClassComponent>
        <PropsExampleInClassComponent/>  
        <Form></Form>
-       <Map/>*/}
-       <SignupForm></SignupForm>
+       <Map/>
+       <SignupForm></SignupForm>*/}
+       <Fetch/>
     </div>
   )
 }
