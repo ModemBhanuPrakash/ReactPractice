@@ -41,7 +41,7 @@ const App = () => {
        <Map/>
        <SignupForm></SignupForm>
        <Fetch/>*/}
-       <Axios/>
+       <SignupForm/>
     </div>
   )
 }

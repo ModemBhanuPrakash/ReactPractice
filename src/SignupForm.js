@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+import axios from 'axios'
 const SignupForm = () => {
     const [data,setData] = useState({
         username : '',
@@ -15,18 +15,19 @@ const SignupForm = () => {
     }
     const submitHandler = e => {
         e.preventDefault()
-        if(username.length<5){
-            alert("username must have atleast 5 characters")
-        }
-        else if(mobile.length!==10){
-            alert("Enter valid mobile number")
-        }
-        else if(password !== confirmPassword){
-            alert("Passwords are not matching")
-        }
-        else{
-            console.log(data)
-        }
+        // if(username.length<5){
+        //     alert("username must have atleast 5 characters")
+        // }
+        // else if(mobile.length!==10){
+        //     alert("Enter valid mobile number")
+        // }
+        // else if(password !== confirmPassword){
+        //     alert("Passwords are not matching")
+        // }
+        // else{
+        //     console.log(data)
+        // }
+        axios.post('https://reactpractice-f9296-default-rtdb.firebaseio.com/register.json',data).then(()=> alert("Submitted Successfully"))
     }
   return (
     <div>
